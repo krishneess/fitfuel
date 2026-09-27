@@ -1,0 +1,765 @@
+/* =========================
+   GENERAL
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #212529;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    margin-left: 10px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 0;
+
+    background: linear-gradient(
+        135deg,
+        #f1f8f4,
+        #ffffff
+    );
+
+    overflow: hidden;
+}
+
+
+/* Hero small heading */
+
+.hero-tag {
+    color: #198754;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Hero heading */
+
+.hero-section h1 {
+    font-size: 64px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    color: #212529;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-section h1 span {
+    color: #198754;
+}
+
+
+/* Hero paragraph */
+
+.hero-text {
+    max-width: 550px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+    margin: 25px 0;
+}
+
+
+/* Hero buttons */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Hero image area */
+
+.hero-food {
+    position: relative;
+
+    width: 420px;
+
+    height: 420px;
+
+    margin: 0 auto;
+
+
+}
+
+
+/* Hero circular image */
+
+.food-circle {
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: #dff3e6;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Actual hero image */
+
+.food-circle .hero-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Zoom into the plate */
+    transform: scale(1.22);
+
+    /* Adjust which part stays visible */
+    object-position: 10% center;
+}
+
+
+/* Floating cards */
+
+.floating-card {
+    position: absolute;
+
+    z-index: 10;
+
+    background: white;
+
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+.floating-card span {
+    margin-right: 6px;
+}
+
+
+/* Top card */
+
+.card-one {
+    top: 35px;
+
+    left: -30px;
+}
+
+
+/* Bottom card */
+
+.card-two {
+    bottom: 35px;
+
+    right: -30px;
+}
+
+
+/* =========================
+   FEATURES SECTION
+========================= */
+
+.features-section {
+    padding: 90px 0;
+
+    background: white;
+}
+
+
+/* Section heading */
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+
+.section-tag {
+    color: #198754;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-heading h2 {
+    font-size: 42px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading > p:last-child {
+    color: #6c757d;
+
+    font-size: 17px;
+}
+
+
+/* Feature cards */
+
+.feature-card {
+    height: 100%;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 18px;
+
+    transition: all 0.3s ease;
+}
+
+
+.feature-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Feature icon */
+
+.feature-icon {
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #e8f5e9;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+}
+
+
+.feature-card h4 {
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-card p {
+    color: #6c757d;
+
+    line-height: 1.7;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   MEAL PLANS
+========================= */
+
+.plans-section {
+    padding: 90px 0;
+
+    background: #f8f9fa;
+}
+
+
+/* Meal card */
+
+.meal-card {
+    position: relative;
+
+    height: 100%;
+
+    border: none;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+
+.meal-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Meal image container */
+
+.meal-card-header {
+    height: 210px;
+
+    overflow: hidden;
+
+    background: #e8f5e9;
+}
+
+
+/* Meal image */
+
+.meal-card-header img {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.meal-card:hover .meal-card-header img {
+    transform: scale(1.05);
+}
+
+
+/* Plan type */
+
+.plan-type {
+    color: #198754;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 8px;
+}
+
+
+/* Price */
+
+.price {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin: 20px 0;
+}
+
+
+.price span {
+    font-size: 14px;
+
+    color: #6c757d;
+
+    font-weight: 400;
+}
+
+
+/* Plan list */
+
+.plan-list {
+    list-style: none;
+
+    padding: 0;
+
+    margin-bottom: 25px;
+}
+
+
+.plan-list li {
+    padding: 7px 0;
+
+    color: #555;
+}
+
+
+/* Popular plan */
+
+.popular-plan {
+    border: 2px solid #198754;
+}
+
+
+.popular-badge {
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    z-index: 5;
+
+    background: #198754;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+    padding: 90px 0;
+
+    background: white;
+}
+
+
+.faq-section .accordion {
+    max-width: 850px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+.accordion-item {
+    border: 1px solid #e9ecef;
+
+    margin-bottom: 12px;
+
+    border-radius: 10px !important;
+
+    overflow: hidden;
+}
+
+
+.accordion-button {
+    font-weight: 600;
+
+    padding: 20px;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #198754;
+
+    background: #e8f5e9;
+
+    box-shadow: none;
+}
+
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding: 75px 0;
+
+    background: #198754;
+
+    color: white;
+}
+
+
+.contact-tag {
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.contact-section h2 {
+    font-size: 40px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.contact-section p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #212529;
+
+    color: #adb5bd;
+
+    padding: 60px 0 25px;
+}
+
+
+.footer-brand {
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+
+.footer h5 {
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+
+.footer p {
+    line-height: 1.7;
+}
+
+
+.footer-links {
+    list-style: none;
+
+    padding: 0;
+}
+
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+
+.footer-links a {
+    color: #adb5bd;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+
+.footer-links a:hover {
+    color: white;
+}
+
+
+.footer hr {
+    border-color: #495057;
+
+    margin: 35px 0 20px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        text-align: center;
+
+        padding: 70px 20px;
+    }
+
+
+    .hero-text {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+
+    .hero-food {
+        margin-top: 60px;
+    }
+
+
+    .contact-section {
+        text-align: center;
+    }
+
+
+    .contact-section .btn {
+        margin-top: 25px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+
+    .hero-section h1 {
+        font-size: 44px;
+    }
+
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+
+    .hero-food {
+        width: 280px;
+
+        height: 280px;
+    }
+
+
+    .card-one {
+        top: 10px;
+
+        left: -5px;
+
+        font-size: 13px;
+
+        padding: 10px 12px;
+    }
+
+
+    .card-two {
+        bottom: 10px;
+
+        right: -5px;
+
+        font-size: 13px;
+
+        padding: 10px 12px;
+    }
+
+
+    .features-section {
+        padding: 60px 20px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .plans-section {
+        padding: 60px 20px;
+    }
+
+
+    .faq-section {
+        padding: 60px 20px;
+    }
+
+
+    .contact-section {
+        padding: 60px 20px;
+
+        text-align: center;
+    }
+
+
+    .contact-section h2 {
+        font-size: 32px;
+    }
+
+
+    .footer {
+        text-align: center;
+    }
+
+}
