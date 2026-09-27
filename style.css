@@ -763,3 +763,110 @@ body {
     }
 
 }
+/* ==========================================
+   REGISTRATION DATA SECTION
+   ========================================== */
+
+.registration-section {
+    padding: 90px 0;
+    background: #f7faf8;
+}
+
+.registration-result {
+    max-width: 900px;
+    margin: 45px auto 0;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5eee8;
+}
+
+
+/* Registration heading */
+
+.registration-result h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 25px;
+}
+
+
+/* User details */
+
+#userDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+
+#userDetails p {
+    margin: 0;
+    padding: 15px 18px;
+    background: #f4f8f5;
+    border-radius: 10px;
+    border-left: 4px solid #198754;
+    color: #4b5563;
+}
+
+
+#userDetails strong {
+    color: #1f2933;
+}
+
+
+/* JSON heading */
+
+.registration-result h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2933;
+    margin-bottom: 15px;
+}
+
+
+/* JSON display */
+
+#jsonOutput {
+    margin: 0;
+    padding: 22px;
+    background: #18231d;
+    color: #d8f3df;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-x: auto;
+    text-align: left;
+    font-family: "Courier New", monospace;
+}
+
+
+/* Mobile responsive */
+
+@media (max-width: 768px) {
+
+    .registration-section {
+        padding: 60px 20px;
+    }
+
+    .registration-result {
+        padding: 25px;
+        margin-top: 30px;
+    }
+
+    #userDetails {
+        grid-template-columns: 1fr;
+    }
+
+    #userDetails p {
+        padding: 13px 15px;
+    }
+
+    #jsonOutput {
+        font-size: 12px;
+        padding: 18px;
+    }
+
+}
